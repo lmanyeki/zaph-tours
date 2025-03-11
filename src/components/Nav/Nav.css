@@ -1,0 +1,156 @@
+.nav-wrapper {
+    width: 90%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.5% 8%;
+    color: var(--background-color);
+    border-radius: 1rem;
+    border: 0.06rem solid var(--primary-color);
+    box-shadow: 0 0 1.9rem rgba(30, 30, 30, 0.3) ;
+    border-radius: 1rem;
+    position: fixed;
+    top: 3rem;
+    left: 5%;
+    z-index: 999;
+    background-color: var(--primary-color);
+}
+
+.nav-logo a {
+    font-size: 1.9rem;
+    color: var(--background-color);
+    font-weight: 800;
+}
+
+.nav-wrapper ul li {
+    display: inline-block;
+    margin: 0 0.9rem;
+}
+
+.nav-wrapper ul li a {
+    font-weight: 500;
+    color: var(--background-color);
+    transition: 0.5s;
+}
+
+.nav-wrapper ul li a:hover {
+    color: var(--accent-color);
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 1.6rem;
+    align-items: center;
+}
+
+.search {
+    width: 12.5rem;
+    height: 2.8rem;
+    display: flex;
+    display: flex;
+    position:  relative;
+
+}
+
+.search input {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+    outline: none;
+    background-color: rgba(00, 0, 0, 0.1);
+    padding: 0 0.5rem;
+    color: var(--accent-color); 
+    border: 0.1rem solid var(--accent-color);
+    transition: all 0.3s ease-in-out;
+}
+
+::placeholder {
+    color: var(--background-color);
+}
+
+input:focus {
+    background-color: rgba(0, 0, 0, 0.05);
+    border-color: var(--medium-color);
+}
+
+.search i {
+    position: absolute;
+    right: 0.5rem;
+    top: 0.7rem;
+    cursor: pointer;
+}
+
+.call {
+    width: 12.5rem;
+    display: flex;
+    gap: 0.8rem;
+}
+
+.call i {
+    font-size: 1.6rem;
+    color: var(--background-color);
+}
+
+.call p {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.call p small {
+    font-weight: 300;
+    font-size: 0.9rem;
+    display: block;
+}
+
+#bars {
+    padding: 0.9rem;
+    font-size: 1.1rem;
+    color: var(--background-color);
+    background-color: var(--secondary-color);
+    cursor: pointer;
+    transition: .6s;
+    display: none;
+}
+
+#bars:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    color: var(--background-color);
+}
+
+@media screen and (max-width:1100px) {
+    #bars {
+        display: block;
+    }
+
+    .nav-wrapper ul {
+        position: absolute;
+        top: 105%;
+        left: 0;
+        background-color: var(--primary-color);
+        transition: 1.2s;
+        width: 0%;
+        border: 0.1rem solid var(--primary-color);
+        border-radius: 0.8rem;
+        border-width: 0rem;
+        overflow: hidden;
+    }
+
+    .nav-wrapper ul li {
+        display: block;
+        margin: 0.9rem 0;
+        padding: 0.5rem 0;
+        padding-left: 8%;
+    }
+
+    .nav-wrapper .activeMenu {
+        border-width: 0.06rem;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .call {
+        display: none;
+    }
+}

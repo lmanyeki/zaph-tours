@@ -1,0 +1,121 @@
+.destinations-container {
+    text-align: center;
+    padding: 5rem 10%;
+    background: #f4f4f4;
+}
+
+.page-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+/* Continents Styling */
+.continent-section {
+    margin-bottom: 4rem;
+}
+
+.continent-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+
+/* Destinations Grid */
+.destination-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+/* Destination Card */
+.destination-card {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.destination-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    padding: 1rem;
+}
+
+.overlay p {
+    color: #fff;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.details-button {
+    background: var(--primary-color);
+    color: #fff;
+    padding: 0.6rem 1.2rem;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.details-button:hover {
+    background: var(--secondary-color);
+}
+
+/* Price Styling */
+.price-info {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #444;
+    margin-top: 1rem;
+}
+
+/* Hover Scale Effect */
+.destination-card:hover {
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.image-container:hover .destination-image {
+    opacity: 0;
+}
+
+.image-container:hover .overlay {
+    opacity: 1;
+}

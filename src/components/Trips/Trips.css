@@ -1,0 +1,77 @@
+.packages-container {
+    text-align: center;
+    padding: 4rem 8%;
+    background-color: var(--background-color);
+}
+
+.package-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.package-card {
+    background: var(--off-white);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Image Hover Effect */
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 200px;
+}
+
+.main-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.hover-images {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.hover-images img {
+    width: 45%;
+    height: 90%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.image-container:hover .main-image {
+    opacity: 0;
+}
+
+.image-container:hover .hover-images {
+    opacity: 1;
+}
+
+.package-description {
+    font-size: 1rem;
+    color: var(--text-color);
+    margin: 1rem 0;
+}
+
+.package-price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}

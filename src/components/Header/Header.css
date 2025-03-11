@@ -1,0 +1,81 @@
+.header {
+    margin-top: 0;
+    padding: 0;
+}
+
+.hero-img {
+    height: 35rem;
+    width: 100%;
+    background-image: url(./../../assets/hero4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 3.8rem;
+    border-radius: 0.8rem;
+    z-index: 1;
+    position: relative;
+    animation: anim_change_img 7s infinite linear alternate;
+    display: flex;
+    align-items: center;
+}
+
+.hero-img::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .4);
+    z-index: -1;
+    border-radius: 0.8rem;
+}
+
+@keyframes anim_change_img {
+    20% {
+        background-image: url(./../../assets/hero4.jpg);
+    }
+
+    100% {
+        background-image: url(./../../assets/hero2.jpg);
+    }
+}
+
+.hero-img h1 {
+    font-size: 4.2rem;
+    color: var(--text-color);
+    width: 100%;
+    justify-content: center;
+    text-wrap: nowrap;
+}
+
+.swiper {
+    width: 80% !important;
+    margin-top: -5.5rem;
+}
+
+.destin-cards {
+    padding: 0.8rem;
+    background-color: var(--background-color);
+    border-radius: 0.8rem;
+}
+
+.destin-cards img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.8rem;
+}
+
+@media screen and (max-width:800px) {
+    .hero-img {
+        height:20rem;
+        padding: 1.2rem;
+    }
+    .hero-img h1 {
+        font-size: 2.8rem;
+        color: var(--background-color);
+    }
+    .hero-img h3 {
+        font-size: 0.7rem;
+        text-wrap: wrap;
+    }
+}
