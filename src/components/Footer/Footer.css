@@ -101,6 +101,22 @@
     font-weight: 700;
 }
 
+.input button {
+    color: var(--accent-color);
+    background-color: var(--medium-color);
+    border: none;
+    padding: 0.6rem;
+    font-family: var(--font-family);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.input button:hover {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+
+}
+
 @media screen and (max-width:900px) {
     .footer-btm {
         grid-template-columns: repeat(2,1fr);

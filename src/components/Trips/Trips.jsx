@@ -1,5 +1,6 @@
 import React from "react";
 import "./Trips.css";
+import Footer from "./../Footer/Footer";
 
 import honeymoon1 from "./../../assets/honeymoon1.jpg";
 import honeymoon2 from "./../../assets/honeymoon2.jpg";
@@ -159,6 +160,7 @@ export default function Trips () {
                     </div>
                 ))}
             </div>
+            <Footer />
         </div>
     );
 }

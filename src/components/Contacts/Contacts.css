@@ -43,24 +43,33 @@
     font-size: 2rem;
     color: var(--primary-color);
     margin-bottom: 0.5rem;
+    text-align: center;
 }
 
 .contact-info p {
     font-size: 2rem;
     color: var(--primary-color);
+    margin-bottom: 1rem;
 }
 
 .contact-details p {
     display: flex;
-    align-items: center;
+    justify-content:end;
     gap: 0.7rem;
     font-size: 1.3rem;
     font-weight: 600;
+    
 }
 
 .contact-info i {
     color: var(--primary-color);
     font-size: 1.5rem;
+}
+
+.office-hours {
+    justify-content: start;
+    margin-top: -12rem;
+
 }
 
 .office-hours h3 {

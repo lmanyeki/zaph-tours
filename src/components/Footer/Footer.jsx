@@ -19,11 +19,11 @@ export default function Footer () {
       <div className="footer-btm">
         <div className="footer-links">
           <ul className="nav-footer">
-            <li><a href="#">Home</a></li>
-            <li><Link to="/destinations">Destinations</Link></li>
-            <li><Link to="/trips">Trips</Link></li>
-            <li><a href="#">Blogs</a></li>
-            <li><Link to="/contact">Contact us</Link></li>
+          <li><Link to="/">Home</Link></li>
+                <li><Link to="/destinations">Destinations</Link></li>
+                <li><Link to="/trips">Trips</Link></li>
+                <li><Link to="/blogs">Blogs</Link></li>
+                <li><Link to="/contact">Contact Us</Link></li>
           </ul>
         </div>
         <div className="footer-links">

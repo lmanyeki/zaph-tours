@@ -11,6 +11,7 @@ import Footer from "./components/Footer/Footer";
 import Contacts from "./components/Contacts/Contacts";
 import Destinations from "./components/Destinations/Destinations";
 import Trips from "./components/Trips/Trips";
+import Blogs from "./components/Blogs/Blogs";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
           <Route path="/destinations" element={<Destinations />} />
           <Route path="/trips" element={<Trips />} />
           <Route path="/contact" element={<Contacts />} />
+          <Route path="/blogs" element={<Blogs />} />
         </Routes>
       </div>
     </BrowserRouter>

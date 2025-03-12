@@ -14,10 +14,10 @@ export default function Nav() {
             </div>
 
             <ul ref={menu} >
-                <li><a href="/">Home</a></li>
-                <li><a href="/destinations">Destinations</a></li>
-                <li><Link to="/trips">Trips</Link>                </li>
-                <li><a href="#">Blogs</a></li>
+                <li><Link to="/">Home</Link></li>
+                <li><Link to="/destinations">Destinations</Link></li>
+                <li><Link to="/trips">Trips</Link></li>
+                <li><Link to="/blogs">Blogs</Link></li>
                 <li><Link to="/contact">Contact Us</Link></li>
             </ul>
 
